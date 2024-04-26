@@ -1,359 +1,204 @@
-body {
-    height: 92.9vh;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+</head>
+<link rel="stylesheet" type="text/css" href="/style.css" >
+<body>
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-}
-.header-container .logo-img img {
-    width: 100px;
-    height: 40px;
-}
+    <div class="header-container">
+        <div class="logo-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1hHFejwA3q-dT-0zCsJ2RDsC_EfCi0_KqcN4taX4hzw&s" alt="logo image">
+        </div>
+        <div class="upper-buttons">
+            <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path></svg>
+            <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M36.2 16.7L29 22.2c-.5.4-1.2.4-1.7 0l-5.4-4c-1.6-1.2-3.9-.8-5 .9l-6.8 10.7c-.7 1 .6 2.2 1.6 1.5l7.3-5.5c.5-.4 1.2-.4 1.7 0l5.4 4c1.6 1.2 3.9.8 5-.9l6.8-10.7c.6-1.1-.7-2.2-1.7-1.5zM24 1C11 1 1 10.5 1 23.3 1 30 3.7 35.8 8.2 39.8c.4.3.6.8.6 1.3l.2 4.1c0 1 .9 1.8 1.8 1.8.2 0 .5 0 .7-.2l4.6-2c.2-.1.5-.2.7-.2.2 0 .3 0 .5.1 2.1.6 4.3.9 6.7.9 13 0 23-9.5 23-22.3S37 1 24 1zm0 41.6c-2 0-4-.3-5.9-.8-.4-.1-.8-.2-1.3-.2-.7 0-1.3.1-2 .4l-3 1.3V41c0-1.3-.6-2.5-1.6-3.4C6.2 34 4 28.9 4 23.3 4 12.3 12.6 4 24 4s20 8.3 20 19.3-8.6 19.3-20 19.3z"></path></svg>
+            <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M31.8 48H16.2c-6.6 0-9.6-1.6-12.1-4C1.6 41.4 0 38.4 0 31.8V16.2C0 9.6 1.6 6.6 4 4.1 6.6 1.6 9.6 0 16.2 0h15.6c6.6 0 9.6 1.6 12.1 4C46.4 6.6 48 9.6 48 16.2v15.6c0 6.6-1.6 9.6-4 12.1-2.6 2.5-5.6 4.1-12.2 4.1zM16.2 3C10 3 7.8 4.6 6.1 6.2 4.6 7.8 3 10 3 16.2v15.6c0 6.2 1.6 8.4 3.2 10.1 1.6 1.6 3.8 3.1 10 3.1h15.6c6.2 0 8.4-1.6 10.1-3.2 1.6-1.6 3.1-3.8 3.1-10V16.2c0-6.2-1.6-8.4-3.2-10.1C40.2 4.6 38 3 31.8 3H16.2z"></path><path d="M36.3 25.5H11.7c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5h24.6c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5z"></path><path d="M24 37.8c-.8 0-1.5-.7-1.5-1.5V11.7c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5v24.6c0 .8-.7 1.5-1.5 1.5z"></path></svg>
+            <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path></svg>
+            <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+            <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 32 32" id="profile"><circle cx="16" cy="7.46" r="6.96" transform="rotate(-9.217 16 7.46)"></circle><path d="M0.78998,24.04999C0.78998,28.15997,4.13,31.5,8.23999,31.5h15.52002c4.10999,0,7.45001-3.34003,7.45001-7.45001s-3.34003-7.45001-7.45001-7.45001H8.23999C4.13,16.59998,0.78998,19.94,0.78998,24.04999z"></path></svg>    
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div class="left">
+            <div class="many-buttons" style="margin-top: 50px;">
+                <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z"></path></svg>
+                <span>Home</span>
+            </div>
+            <div class="many-buttons">
+                <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" id="search"><path d="M46.599 40.236L36.054 29.691C37.89 26.718 39 23.25 39 19.5 39 8.73 30.27 0 19.5 0S0 8.73 0 19.5 8.73 39 19.5 39c3.75 0 7.218-1.11 10.188-2.943l10.548 10.545a4.501 4.501 0 0 0 6.363-6.366zM19.5 33C12.045 33 6 26.955 6 19.5S12.045 6 19.5 6 33 12.045 33 19.5 26.955 33 19.5 33z"></path></svg>
+                <span>Search</span>
+            </div>
+            <div class="many-buttons">
+                <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path clip-rule="evenodd" d="M24 0C10.8 0 0 10.8 0 24s10.8 24 24 24 24-10.8 24-24S37.2 0 24 0zm0 45C12.4 45 3 35.6 3 24S12.4 3 24 3s21 9.4 21 21-9.4 21-21 21zm10.2-33.2l-14.8 7c-.3.1-.6.4-.7.7l-7 14.8c-.3.6-.2 1.3.3 1.7.3.3.7.4 1.1.4.2 0 .4 0 .6-.1l14.8-7c.3-.1.6-.4.7-.7l7-14.8c.3-.6.2-1.3-.3-1.7-.4-.5-1.1-.6-1.7-.3zm-7.4 15l-5.5-5.5 10.5-5-5 10.5z" fill-rule="evenodd"></path></svg>
+                <span>Explore</span>
+            </div>
+            <div class="many-buttons">
+                <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M31.8 48H16.2c-6.6 0-9.6-1.6-12.1-4C1.6 41.4 0 38.4 0 31.8V16.2C0 9.6 1.6 6.6 4 4.1 6.6 1.6 9.6 0 16.2 0h15.6c6.6 0 9.6 1.6 12.1 4C46.4 6.6 48 9.6 48 16.2v15.6c0 6.6-1.6 9.6-4 12.1-2.6 2.5-5.6 4.1-12.2 4.1zM16.2 3C10 3 7.8 4.6 6.1 6.2 4.6 7.8 3 10 3 16.2v15.6c0 6.2 1.6 8.4 3.2 10.1 1.6 1.6 3.8 3.1 10 3.1h15.6c6.2 0 8.4-1.6 10.1-3.2 1.6-1.6 3.1-3.8 3.1-10V16.2c0-6.2-1.6-8.4-3.2-10.1C40.2 4.6 38 3 31.8 3H16.2z"></path><path d="M36.3 25.5H11.7c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5h24.6c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5z"></path><path d="M24 37.8c-.8 0-1.5-.7-1.5-1.5V11.7c0-.8.7-1.5 1.5-1.5s1.5.7 1.5 1.5v24.6c0 .8-.7 1.5-1.5 1.5z"></path></svg>
+                <span>Create</span>
+            </div>
+            <div class="many-buttons">
+                <svg class="small-topimg" color="#262626" fill="#262626" height="22" role="img" viewBox="0 0 48 48" width="22"><path d="M36.2 16.7L29 22.2c-.5.4-1.2.4-1.7 0l-5.4-4c-1.6-1.2-3.9-.8-5 .9l-6.8 10.7c-.7 1 .6 2.2 1.6 1.5l7.3-5.5c.5-.4 1.2-.4 1.7 0l5.4 4c1.6 1.2 3.9.8 5-.9l6.8-10.7c.6-1.1-.7-2.2-1.7-1.5zM24 1C11 1 1 10.5 1 23.3 1 30 3.7 35.8 8.2 39.8c.4.3.6.8.6 1.3l.2 4.1c0 1 .9 1.8 1.8 1.8.2 0 .5 0 .7-.2l4.6-2c.2-.1.5-.2.7-.2.2 0 .3 0 .5.1 2.1.6 4.3.9 6.7.9 13 0 23-9.5 23-22.3S37 1 24 1zm0 41.6c-2 0-4-.3-5.9-.8-.4-.1-.8-.2-1.3-.2-.7 0-1.3.1-2 .4l-3 1.3V41c0-1.3-.6-2.5-1.6-3.4C6.2 34 4 28.9 4 23.3 4 12.3 12.6 4 24 4s20 8.3 20 19.3-8.6 19.3-20 19.3z"></path></svg>
+                <span>Messages</span>
+            </div>
+            <div class="many-buttons">
+                <svg height="22" role="img" viewBox="0 0 48 48" width="22">
+                    <path d="M13.34 4.13L20.26 16H4v-1C4 9.48 8.05 4.92 13.34 4.13zM33.26 16L22.57 16 15.57 4 26.26 4zM46 15v1H35.57l-7-12H35C41.08 4 46 8.92 46 15zM4 18v17c0 6.08 4.92 11 11 11h20c6.08 0 11-4.92 11-11V18H4zM31 32.19l-7.99 4.54C21.68 37.49 20 36.55 20 35.04v-9.08c0-1.51 1.68-2.45 3.01-1.69L31 28.81C32.33 29.56 32.33 31.44 31 32.19z"></path>
+                    </svg>
+                <span>Reels</span>
+            </div>
 
-.header-container .upper-buttons .small-topimg {
-    margin-right: 10px; /* Adjust the margin value as per your preference */
-}
+            <div class="many-buttons">
+                <?xml version="1.0" encoding="UTF-8"?><svg width="22px" height="22px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M22 8.86222C22 10.4087 21.4062 11.8941 20.3458 12.9929C17.9049 15.523 15.5374 18.1613 13.0053 20.5997C12.4249 21.1505 11.5042 21.1304 10.9488 20.5547L3.65376 12.9929C1.44875 10.7072 1.44875 7.01723 3.65376 4.73157C5.88044 2.42345 9.50794 2.42345 11.7346 4.73157L11.9998 5.00642L12.2648 4.73173C13.3324 3.6245 14.7864 3 16.3053 3C17.8242 3 19.2781 3.62444 20.3458 4.73157C21.4063 5.83045 22 7.31577 22 8.86222Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+                <span>Notification</span>
+            </div>
 
-.bottom-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-}
+            <div class="many-buttons">
+                <img src="https://pbs.twimg.com/media/FZIpZXtaQAAOTv2.jpg" style="border-radius: 50%;">
+                <span>Profile</span>
+            </div>
 
-.left {
-    flex: 0 0 15%;
-    height: 100%;
-    border-right: 1px solid #ccc;
-    margin: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+            <div class="bottom-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                  <span>Settings</span>
+            </div>
 
-.left .many-buttons {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding: 0 15px;
-    width: 80%;
+        </div>
+        <div class="middle">
+            <div class="story-container">
+                <img src="https://i.ibb.co/tPC9n6J/wmtkuMG.jpg" alt="story 0" style=" padding: 3px;">
+                <img src="https://pbs.twimg.com/media/FZIpZXtaQAAOTv2.jpg" alt="story 1" style=" padding: 3px;">
+                <img src="https://i.pinimg.com/280x280_RS/14/c5/25/14c525ed5acff88249193cd22584a6c9.jpg" alt="story 2" style=" padding: 3px;">
+                <img src="https://pbs.twimg.com/profile_images/1686391903070416896/7iySp3Vq_400x400.jpg" alt="story 3" style=" padding: 3px;">
+                <img src="https://pbs.twimg.com/profile_images/1745156323338301443/5tCj2PYf_400x400.jpg" alt="story 4" style=" padding: 3px;">
+                <img src="https://pbs.twimg.com/profile_images/1674815862879178752/nTGMV1Eo_400x400.jpg" alt="story 5" style=" padding: 3px;">
+                <img src="https://pbs.twimg.com/profile_images/1682542862854963203/CbPQ7vIN_400x400.jpg" alt="story 6" style=" padding: 3px;">
+                <img src="https://mir-s3-cdn-cf.behance.net/user/115/868e621190186083.620115987f190.png" alt="story 7" style=" padding: 3px;">
+                <img src="https://media-bom2-2.cdn.whatsapp.net/v/t61.24694-24/363882040_1744800492637964_3424674276824326121_n.jpg?ccb=11-4&oh=01_Q5AaIMmc4qP_5T3uHWvt3IdTsExCeYfhgBTUAKcqqCf1AGyZ&oe=662CBC93&_nc_sid=e6ed6c&_nc_cat=109" alt="story 8" style=" padding: 3px;">
+                <img src="https://pbs.twimg.com/profile_images/1663924235830718464/rmcarCWw_400x400.jpg" alt="story 9" style=" padding: 3px;">
+                <img src="https://pbs.twimg.com/profile_images/1562753790369218560/wtiHWrkG_400x400.jpg" alt="story 10" style=" padding: 3px;">
+                <img src="https://icones.pro/wp-content/uploads/2021/02/instagram-logo-icone4.png" alt="story 10" style=" padding: 3px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2062095_application_chat_communication_logo_whatsapp_icon.svg/2048px-2062095_application_chat_communication_logo_whatsapp_icon.svg.png" alt="story 10" style=" padding: 3px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrgjZVYT0sxSCRszjJuS3WQcAk8MPmHxntLon0awmKw&s" alt="story 10" style=" padding: 3px;">
+                <img src="https://coindcx.com/blog/wp-content/uploads/2021/09/ProfilePic.svg" alt="story 10" style=" padding: 3px;">
+
+
+            </div>
+            <div class="container">
+                
+                <div class="post-container">
+                    <div class="profile-header">
+                        <div class="user">
+                        <img src="https://pbs.twimg.com/media/FZIpZXtaQAAOTv2.jpg" alt="userimg">
+                        <div class="info-user">
+                            <div class="u-section">
+                                <span class="username">themukund07</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="#4db8ff" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                </svg>
+                                <div id="date">• 3w</div>
+                            </div>
+                            <span id="music">
+                                <?xml version="1.0" encoding="UTF-8"?><svg width="8px" height="8px"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20 14V3L9 5V16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 19H18C19.1046 19 20 18.1046 20 17V14H17C15.8954 14 15 14.8954 15 16V17C15 18.1046 15.8954 19 17 19Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 21H7C8.10457 21 9 20.1046 9 19V16H6C4.89543 16 4 16.8954 4 18V19C4 20.1046 4.89543 21 6 21Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  original sound
+                            </span>
+                        </div>
+                        
+                        </div>
+                        
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                    </div>
+
+                    <img id="post-image" src="https://via.placeholder.com/1080x880/eee?text=this+is+just+a+ui" style="border-radius: 5px;">
+                    <div class="bottom-post-section">
+                        <div class="three-buttons">
+                            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M22 8.86222C22 10.4087 21.4062 11.8941 20.3458 12.9929C17.9049 15.523 15.5374 18.1613 13.0053 20.5997C12.4249 21.1505 11.5042 21.1304 10.9488 20.5547L3.65376 12.9929C1.44875 10.7072 1.44875 7.01723 3.65376 4.73157C5.88044 2.42345 9.50794 2.42345 11.7346 4.73157L11.9998 5.00642L12.2648 4.73173C13.3324 3.6245 14.7864 3 16.3053 3C17.8242 3 19.2781 3.62444 20.3458 4.73157C21.4063 5.83045 22 7.31577 22 8.86222Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+                            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48697 15.5291 3.33782 17L2.5 21.5L7 20.6622C8.47087 21.513 10.1786 22 12 22Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                              </svg>   
+
+                        </div>
+                        <div class="save-buttons">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="save" width="24px" height="24px" fill="currentColor"><path d="M23 5H9C7.346 5 6 6.346 6 8v19a1 1 0 0 0 1.614.789L16 21.267l8.386 6.522a.996.996 0 0 0 1.053.109A1 1 0 0 0 26 27V8c0-1.654-1.346-3-3-3zm1 19.956-7.386-5.745a.999.999 0 0 0-1.228-.001L8 24.956V8c0-.551.449-1 1-1h14c.551 0 1 .449 1 1v16.956z"></path></svg>
+                        </div>
+                    
+                    </div>
+                    <div class="desc">
+                        <span id="likedby">2,686,785 likes</span>
+                        <span id="bolder">themukund07 <font style="font-weight: 500;">testing the description text.</font></span>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="post-container">
+                    <div class="profile-header">
+                        <div class="user">
+                        <img src="https://pbs.twimg.com/media/FZIpZXtaQAAOTv2.jpg" alt="userimg">
+                        <div class="info-user">
+                            <div class="u-section">
+                                <span class="username">themukund07</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" fill="#4db8ff" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                    <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                </svg>
+                                <div id="date">• 3w</div>
+                            </div>
+                            <span id="music">
+                                <?xml version="1.0" encoding="UTF-8"?><svg width="8px" height="8px"  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M20 14V3L9 5V16" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 19H18C19.1046 19 20 18.1046 20 17V14H17C15.8954 14 15 14.8954 15 16V17C15 18.1046 15.8954 19 17 19Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 21H7C8.10457 21 9 20.1046 9 19V16H6C4.89543 16 4 16.8954 4 18V19C4 20.1046 4.89543 21 6 21Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>  Pappu | by Modi
+                            </span>
+                        </div>
+                        
+                        </div>
+                        
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                    </div>
+
+                    <img id="post-image" src="https://via.placeholder.com/1080x700/eee?text=instagram+image+testing" style="border-radius: 5px;">
+                    <div class="bottom-post-section">
+                        <div class="three-buttons">
+                            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M22 8.86222C22 10.4087 21.4062 11.8941 20.3458 12.9929C17.9049 15.523 15.5374 18.1613 13.0053 20.5997C12.4249 21.1505 11.5042 21.1304 10.9488 20.5547L3.65376 12.9929C1.44875 10.7072 1.44875 7.01723 3.65376 4.73157C5.88044 2.42345 9.50794 2.42345 11.7346 4.73157L11.9998 5.00642L12.2648 4.73173C13.3324 3.6245 14.7864 3 16.3053 3C17.8242 3 19.2781 3.62444 20.3458 4.73157C21.4063 5.83045 22 7.31577 22 8.86222Z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path></svg>
+                            <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48697 15.5291 3.33782 17L2.5 21.5L7 20.6622C8.47087 21.513 10.1786 22 12 22Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                              </svg>   
+
+                        </div>
+                        <div class="save-buttons">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="save" width="24px" height="24px" fill="currentColor"><path d="M23 5H9C7.346 5 6 6.346 6 8v19a1 1 0 0 0 1.614.789L16 21.267l8.386 6.522a.996.996 0 0 0 1.053.109A1 1 0 0 0 26 27V8c0-1.654-1.346-3-3-3zm1 19.956-7.386-5.745a.999.999 0 0 0-1.228-.001L8 24.956V8c0-.551.449-1 1-1h14c.551 0 1 .449 1 1v16.956z"></path></svg>
+                        </div>
+                    
+                    </div>
+                    <div class="desc">
+                        <span id="likedby">2,686,785 likes</span>
+                        <span id="bolder">themukund07 <font style="font-weight: 500;">testing the description text.</font></span>
+                        
+                    </div>
+                    
+                </div>
+
+                
+                
+                
+            </div>
+        </div>
+        <div class="right">
+            <div class="sponsor-container">this is sponsored section, Nothing to show here for Ad</div>
+            <div class="sponsor-container">
+                <a href="https://www.instagram.com/themukund07/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqyymm2PPS-r3oGCEOVbDInjvl8Cw-NiHd1-FzY9XF&s" id="spsr-img"></a>
+            </div>
+            <div class="sponsor-container" style="border-color: black;">this is just UI design of Instagram made by me.</div>
+        </div>
+    </div>
     
-}
-
-.left .many-buttons img {
-    width: 22px;
-    
-}
-
-
-.left .many-buttons svg:hover {
-    width: 25px;
-    transition: height 0.1s ease;
-    
-}
-
-.left .many-buttons:hover,
-.left .bottom-button:hover {
-    border: 01px solid #ccc;
-    border-radius: 4px;
-    background-color: rgb(211, 214, 218);
-    
-    
-}
-
-.left .many-buttons span,
-.left .bottom-button span{
-    font-weight: 700;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    margin: 10px;
-}
-
-.left .bottom-button {
-    margin-top: auto; 
-    margin-bottom: 10px; 
-    padding: 10px; 
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    padding: 0 15px;
-    width: 80%;
-}
-
-.middle {
-    flex: 0 0 65%;
-    display: flex;
-    flex-direction: column;
-}
-
-.story-container {
-    display: flex;
-    width: 90%;
-    height: 10%;
-    border: 01px solid #ccc;
-    border-radius: 5px;
-    padding: 5px;
-    margin: 10px auto;
-    flex-direction: row;
-    overflow-x: visible;
-    overflow-y: hidden;
-}
-
-.story-container::-webkit-scrollbar {
-    height: 8px;
-    width: 50px;
-    padding-bottom: 4px !important;
-    
-}
-
-.story-container::-webkit-scrollbar-track {
-    background: #e0dcdc;
-}
-
-.story-container::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
-
-.story-container::-webkit-scrollbar-thumb:hover {
-    background: #ff0606;
-    
-}
-
-.story-container img {
-    width: 48px;
-    height: 48px;
-    background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, rgb(231, 14, 14), rgb(209, 154, 147)) border-box;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  margin-left: 5px;
-  
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 3px auto;
-    width: 50%;
-    max-height: 82%;;
-    overflow-x: hidden;
-    overflow-y: visible;
-}
-
-.post-container {
-    display: flex;
-    flex-direction: column;
-    border: 01px solid #ccc;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 3px;
-}
-.post-container svg {
-    margin-top: 6px;
-}
-
-
-.post-container .profile-header {
-    display: flex;
-    height: 7%;
-    justify-content: space-between;
-    width: 95%;
-    margin: 2px auto;
-    
-}
-.post-container #post-image {
-    border-radius: 5px;
-    max-height: 470px;
-    max-width: 98%;
-    border: 01px solid #ccc;
-    margin: 05px auto;
-    object-fit: contain;
-    
-}
-.user {
-    display: flex;
-    align-items: center;
-}
-
-.user img {
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
-    border-radius: 50%;
-    margin-right: 10px; /* Adjust the margin as needed */
-}
-
-.user span {
-    font-size: 16px;
-    display: block;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-
-}
-
-.info-user span {
-    margin: 0px;
-}
-
-#music {
-    font-size: 10px;
-    align-items: center;
-}
-
-
-#date {
-    margin-left: 5px;
-    font-size: 15px;
-    color: rgb(161, 159, 159);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 5px;
-    padding: 2px 5px;
-
-}
-.u-section {
-    display: flex;
-    align-items: center;
-}
-.u-section svg{
-    margin-left: 5px;
-    margin-bottom: 5px;
-    align-items: center;
-}
-
-.post-container .profile-header img{
-    width: 30px;
-    height: 30px;
-}
-
-.bottom-post-section {
-    display: flex;
-    width: 93%;
-    margin: 5px auto;
-    justify-content: space-between;
-}
-
-.desc {
-    width: 93%;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-}
-
-#likedby{
-    font-weight: 500;
-    font-size: 12px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-right: 5px;
-   
-}
-
-#bolder{
-    font-weight: 600;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-right: 5px;
-   
-}
-
-.three-buttons {
-    display: flex;
-}
-
-.three-buttons svg {
-    margin-right: 3px;
-}
-
-.right {
-    flex: 0 0 20%;
-    padding: 1px;
-    border-left: 1px solid #ccc;
-}
-
-.sponsor-container {
-    display: flex;
-    padding: 10px;
-    width: 80%;
-    margin: 10px auto;
-    border: 01px solid #ccc;
-    border-radius: 5px;
-}
-
-.sponsor-container #spsr-img {
-    width: 100%;
-    object-fit: contain;
-    padding: 2px;
-    overflow: hidden;
-
-}
-
-/* For mobile devices */
-@media only screen and (max-width: 600px) {
-    .left,
-    .right {
-        display: none; /* Hide left and right classes */
-    }
-
-    .middle {
-        width: 95%; /* Show middle container as 95% of the screen width */
-        margin: 10px auto; /* Center the middle container */
-    }
-    .container {
-        width: 98%;
-    }
-    .story-container {
-        width: 95%;
-    }
-    .post-container #post-image {
-        border-radius: 5px;
-        max-height: 470px;
-        max-width: 98%;
-        margin: 05px auto;
-        object-fit: contain;
-        
-    }
-    .story-container {
-        display: flex;
-        width: 90%;
-        height: 8%;
-        border: 01px solid #ccc;
-        border-radius: 5px;
-        padding: 5px;
-        margin: 10px auto;
-        flex-direction: row;
-        overflow-x: visible;
-        overflow-y: hidden;
-    }
-    body {
-        overflow: hidden;
-    }
-}
-
-/* For tablet devices */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .left,
-    .right {
-        display: none; /* Hide left and right classes */
-    }
-
-    .middle {
-        width: 85%; /* Show middle container as 75% of the screen width */
-        margin: 10px auto; /* Center the middle container */
-    }
-    .container {
-        width: 100%;
-    }
-    .story-container {
-        width: 95%;
-    }
-    .post-container #post-image {
-        border-radius: 5px;
-        max-height: 470px;
-        max-width: 98%;
-        margin: 05px auto;
-        object-fit: contain;
-        
-    }
-}
+</body>
+</html>
