@@ -93,7 +93,7 @@ body {
 .story-container {
     display: flex;
     width: 90%;
-    height: 9%;
+    height: 10%;
     border: 01px solid #ccc;
     border-radius: 5px;
     padding: 5px;
@@ -102,6 +102,28 @@ body {
     overflow-x: visible;
     overflow-y: hidden;
 }
+
+.story-container::-webkit-scrollbar {
+    height: 8px;
+    width: 50px;
+    padding-bottom: 4px !important;
+    
+}
+
+.story-container::-webkit-scrollbar-track {
+    background: #e0dcdc;
+}
+
+.story-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.story-container::-webkit-scrollbar-thumb:hover {
+    background: #ff0606;
+    
+}
+
 .story-container img {
     width: 48px;
     height: 48px;
@@ -118,6 +140,7 @@ body {
     flex-direction: column;
     margin: 3px auto;
     width: 50%;
+    max-height: 82%;;
     overflow-x: hidden;
     overflow-y: visible;
 }
@@ -132,6 +155,8 @@ body {
 .post-container svg {
     margin-top: 6px;
 }
+
+
 .post-container .profile-header {
     display: flex;
     height: 7%;
@@ -142,10 +167,12 @@ body {
 }
 .post-container #post-image {
     border-radius: 5px;
-    height: 470px;
-    width: 470px;
-    margin: 0px auto;
+    max-height: 470px;
+    max-width: 98%;
+    border: 01px solid #ccc;
+    margin: 05px auto;
     object-fit: contain;
+    
 }
 .user {
     display: flex;
@@ -253,3 +280,68 @@ body {
     border-radius: 5px;
 }
 
+.sponsor-container #spsr-img {
+    width: 100%;
+    object-fit: contain;
+    padding: 2px;
+    overflow: hidden;
+
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .left,
+    .right {
+        display: none; /* Hide left and right classes */
+    }
+
+    .middle {
+        width: 95%; /* Show middle container as 95% of the screen width */
+        margin: 10px auto; /* Center the middle container */
+    }
+    .container {
+        width: 98%;
+    }
+    .story-container {
+        width: 95%;
+    }
+    .post-container #post-image {
+        border-radius: 5px;
+        max-height: 470px;
+        max-width: 98%;
+        margin: 05px auto;
+        object-fit: contain;
+        
+    }
+    body {
+        overflow: hidden;
+        height: 95vh;
+    }
+}
+
+/* For tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .left,
+    .right {
+        display: none; /* Hide left and right classes */
+    }
+
+    .middle {
+        width: 85%; /* Show middle container as 75% of the screen width */
+        margin: 10px auto; /* Center the middle container */
+    }
+    .container {
+        width: 100%;
+    }
+    .story-container {
+        width: 95%;
+    }
+    .post-container #post-image {
+        border-radius: 5px;
+        max-height: 470px;
+        max-width: 98%;
+        margin: 05px auto;
+        object-fit: contain;
+        
+    }
+}
