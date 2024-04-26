@@ -151,6 +151,7 @@ body {
     border: 01px solid #ccc;
     border-radius: 5px;
     margin: 5px;
+    padding: 3px;
 }
 .post-container svg {
     margin-top: 6px;
@@ -312,6 +313,18 @@ body {
         margin: 05px auto;
         object-fit: contain;
         
+    }
+    .story-container {
+        display: flex;
+        width: 90%;
+        height: 8%;
+        border: 01px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 10px auto;
+        flex-direction: row;
+        overflow-x: visible;
+        overflow-y: hidden;
     }
     body {
         overflow: hidden;
